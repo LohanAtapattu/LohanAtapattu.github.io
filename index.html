@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ec">
+  <meta name="theme-color" content="#07172a">
   <meta name="description" content="Lohan Atapattu is a biomedical engineer interested in low-power circuits, neural interfaces, and biomedical electronics.">
   <title>Lohan Atapattu — Biomedical Engineer & IC Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,64 +13,52 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Lohan Atapattu home"><span class="mark">LA</span><span>LOHAN ATAPATTU</span></a>
+    <a class="wordmark" href="index.html" aria-label="Lohan Atapattu home"><span class="mark"><img src="assets/lohan-neural-mark.svg" alt=""></span><span>LOHAN ATAPATTU</span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="projects/index.html">Projects</a><a href="#writing">Publications</a><a href="#contact" class="nav-contact">Get in touch <span>↗</span></a>
+      <a href="#about">About</a><a href="projects/index.html">Projects</a><a href="publications.html">Publications</a><a href="#contact" class="nav-contact">Get in touch <span>↗</span></a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> BIOMEDICAL ENGINEERING · SRI LANKA</p>
+        <p class="eyebrow">BIOMEDICAL ENGINEER · NEURAL INTERFACES</p>
         <h1>Building circuits<br>that <em>listen</em> to the body.</h1>
-        <p class="hero-intro">I’m Lohan, a biomedical engineering graduate exploring analog and mixed-signal IC design, neural interfaces, and digital systems.</p>
-        <div class="hero-actions"><a class="button button-dark" href="projects/index.html">Explore my projects <span>↗</span></a><a class="text-link" href="assets/Lohan_Atapattu_CV.pdf" target="_blank" rel="noreferrer">View CV <span>↗</span></a></div>
-        <div class="hero-meta"><span>UNIVERSITY OF MORATUWA</span><span>B.SC. ENGINEERING (HONS.), 2026</span></div>
+        <p class="hero-intro">I’m Lohan Atapattu. I work across low-power analog and mixed-signal IC design, biosignal acquisition, and digital systems for biomedical applications.</p>
+        <div class="hero-actions"><a class="button button-dark" href="projects/index.html">Research & projects <span>↗</span></a><a class="text-link" href="assets/Lohan_Atapattu_CV.pdf" target="_blank" rel="noreferrer">View CV <span>↗</span></a></div>
+        <div class="hero-meta"><span>BIOMEDICAL ENGINEERING</span><span>UNIVERSITY OF MORATUWA · 2026</span></div>
       </div>
-      <div class="hero-art" aria-label="Abstract visualization of a biomedical signal and integrated circuit" role="img">
-        <div class="art-top"><span>01 / SIGNAL TO SILICON</span><span>6° 47′ N&nbsp; 79° 53′ E</span></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="chip"><div class="chip-core"><span>µV</span><i></i><b>EEG</b></div><div class="chip-pins"></div></div>
-        <svg class="wave" viewBox="0 0 540 180" preserveAspectRatio="none" aria-hidden="true"><path d="M0 94h67l12-3 11 6 12-6 15 1 11-4 10 3 11-5 11 9 12-2 10-35 9 73 11-54 9 22 12-5h40l11-2 8 4 11-6 11 4 8-2 12 3h82"/></svg>
-        <div class="art-note"><span class="note-line"></span><span>WEARABLE<br>EAR-EEG</span></div>
-        <div class="art-caption">FROM BIOPOTENTIAL<br>TO BETTER SIGNALS</div><span class="art-index">FIG. 001</span>
-      </div>
+      <section class="hero-art research-figure" aria-labelledby="signal-heading">
+        <div class="figure-heading">
+          <div><span>BIOSIGNAL EXPLORER</span><strong id="signal-heading">Electroencephalogram <i>(EEG)</i></strong></div>
+          <button class="signal-play" type="button" aria-pressed="false">Pause trace</button>
+        </div>
+        <div class="signal-meta"><span id="signal-range">LOW-AMPLITUDE NEURAL ACTIVITY</span><span>ILLUSTRATIVE SIGNAL</span></div>
+        <div class="figure-main">
+          <svg class="signal-path" viewBox="0 0 560 210" preserveAspectRatio="none" role="img" aria-label="Illustrative EEG waveform"><path class="signal-grid" d="M0 42H560M0 84H560M0 126H560M0 168H560"/><path class="signal-trace" d="M0 105l14-2 9 4 11-5 12 1 10-3 10 4 9-2 12 1 8-5 11 7 11-3 10-21 8 40 11-29 10 16 11-4 13 1 10-3 12 6 10-2 13 1 10-5 9 2 11-3 13 7 9-2 10-19 9 37 12-28 10 14 11-4 14 2 10-4 10 1 13-2 11 5 9-3 10 1 11-4 12 5 12-2 10 2 11-3 12 4 12-5 10 2 10-1 13 3 10-3 12 2 11-5 12 4 10-2 14 1 10-4 12 3 12-2 14 2"/></svg>
+        </div>
+        <div class="signal-controls" role="group" aria-label="Select a biosignal"><button class="signal-tab" type="button" data-signal="eeg" aria-pressed="true">EEG</button><button class="signal-tab" type="button" data-signal="ecg" aria-pressed="false">ECG</button><button class="signal-tab" type="button" data-signal="emg" aria-pressed="false">EMG</button></div>
+        <div class="figure-caption"><span id="signal-description" aria-live="polite">Neural activity measured at the scalp or ear.</span><span>SIMULATED · NOT PATIENT DATA</span></div>
+      </section>
       <a class="scroll-cue" href="#about" aria-label="Scroll to about section">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
     <section class="about section-pad" id="about">
       <div class="shell about-grid">
-        <div><p class="eyebrow">01 — ABOUT</p><h2>Engineering at<br>the <em>edge</em> of biology.</h2></div>
-        <div class="about-body"><p class="lead">I’m interested in the small, thoughtful systems that help technology connect with human physiology.</p><p>My work spans low-power analog and mixed-signal circuits, biosignal acquisition, and digital signal processing. At the University of Moratuwa, I contributed to biomedical IC research and student tapeout projects, including a dry-contact Ear-EEG system designed to monitor electrode–skin impedance and help reduce motion artifacts.</p><p>I enjoy moving between circuit-level details and the real-world needs a system should serve.</p><div class="interest-list"><span>LOW-POWER ICs</span><span>NEURAL INTERFACES</span><span>BIOMEDICAL ELECTRONICS</span></div></div>
+        <div><p class="eyebrow">01 — ABOUT</p><h2>Circuits for<br><em>human signals.</em></h2></div>
+        <div class="about-body"><p class="lead">My research interests are neural interfaces, low-power biomedical ICs, and implantable electronics.</p><p>At the University of Moratuwa, I worked on a dry-contact Ear-EEG system and an analog IC for electrode–skin impedance monitoring. I’m currently exploring low-noise CMOS amplification for neural recording.</p><p>I’m interested in the full path from electrode and analog front end to reliable biosignal data, especially for wearable and implantable systems.</p><div class="interest-list"><span>LOW-POWER ICs</span><span>NEURAL INTERFACES</span><span>BIOMEDICAL ELECTRONICS</span></div></div>
       </div>
     </section>
 
-    <section class="projects-callout section-pad" aria-labelledby="projects-heading">
-      <div class="shell project-prompt">
-        <div><p class="eyebrow">02 — SELECTED WORK</p><h2 id="projects-heading">Research & <em>projects</em></h2><p>Explore circuit designs, biosignal systems, and assistive technology. Each project has its own page with a focused overview.</p></div>
-        <a class="button button-dark" href="projects/index.html">Browse all projects <span>↗</span></a>
-        <div class="prompt-index">01—14<br>PROJECTS</div>
-      </div>
-    </section>
 
-    <section class="writing section-pad" id="writing">
-      <div class="shell">
-        <div class="section-heading"><div><p class="eyebrow">03 — RESEARCH & WRITING</p><h2>Ideas made <em>shareable.</em></h2></div><p>Selected publications from biomedical circuits and open-source IC design.</p></div>
-        <div class="publications">
-          <article class="publication"><span class="pub-year">2026<br><small>BioCAS</small></span><div><p class="pub-type">CONFERENCE PAPER</p><h3>A Dry-Contact Ear-EEG System With Continuous Electrode-Skin Impedance Mismatch Monitoring for Motion Artifact Cancellation Using DRL Stimulus</h3><p class="pub-authors">L. Atapattu, S. Madugalle, I. Nethmal, et al. · IEEE Biomedical Circuits and Systems Conference</p></div><span class="pub-arrow">↗</span></article>
-          <article class="publication"><span class="pub-year">2026<br><small>ICM</small></span><div><p class="pub-type">CONFERENCE PAPER</p><h3>An Open-Source CMOS ASIC for I/Q Based Electrode-Skin Impedance Mismatch Extraction</h3><p class="pub-authors">I. Nethmal, L. Atapattu, E. Jayathilaka, et al. · IEEE International Conference in Microelectronics</p></div><span class="pub-arrow">↗</span></article>
-          <article class="publication"><span class="pub-year">2025<br><small>E-CARRIER</small></span><div><p class="pub-type">TECHNICAL ARTICLE</p><h3>From Circuit Design to Silicon: Exploring the OSIC Design Toolchain and Affordable Chip Tapeouts using Open-source PDKs</h3><p class="pub-authors">A practical introduction to an open-source IC design and tapeout journey.</p></div><span class="pub-arrow">↗</span></article>
-        </div>
-        <div class="home-note"><span>ALSO</span><p>Teaching IC design and digital systems · IEEE Circuits and Systems Society founding chairperson · Biomedical Research in IC Design</p></div>
-      </div>
-    </section>
 
-    <section class="contact section-pad" id="contact"><div class="shell contact-inner"><p class="eyebrow">04 — LET’S CONNECT</p><h2>Have a good<br>question? <em>So do I.</em></h2><p>I’m glad to connect around biomedical circuits, research, and building technology with purpose.</p><a class="button button-light" href="mailto:atapattulohan@gmail.com">Say hello <span>↗</span></a><div class="contact-stamp">OPEN TO<br>COLLABORATION<br><b>✳</b></div></div></section>
+
+
+    <section class="contact section-pad" id="contact"><div class="shell contact-inner"><p class="eyebrow">02 — LET’S CONNECT</p><h2>For research<br>and <em>collaboration.</em></h2><p>For questions about my work, research opportunities, or collaboration, email me.</p><a class="button button-light" href="mailto:atapattulohan@gmail.com">Email Lohan <span>↗</span></a><div class="contact-stamp">OPEN TO<br>COLLABORATION<br><b>✳</b></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="index.html"><span class="mark">LA</span><span>LOHAN ATAPATTU</span></a><p>Biomedical engineering · Sri Lanka</p><div class="socials"><a href="mailto:atapattulohan@gmail.com">Email ↗</a><a href="https://github.com/LohanAtapattu" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/lohan-atapattu-403171241/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="assets/Lohan_Atapattu_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a></div><span class="copyright">© 2026 LOHAN ATAPATTU</span></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="index.html"><span class="mark"><img src="assets/lohan-neural-mark.svg" alt=""></span><span>LOHAN ATAPATTU</span></a><p>Biomedical engineering · Sri Lanka</p><div class="socials"><a href="mailto:atapattulohan@gmail.com">Email ↗</a><a href="https://github.com/LohanAtapattu" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/lohan-atapattu-403171241/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="assets/Lohan_Atapattu_CV.pdf" target="_blank" rel="noreferrer">CV ↗</a></div><span class="copyright">© 2026 LOHAN ATAPATTU</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
